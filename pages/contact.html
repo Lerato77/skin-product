@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lirah's skincare organics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lirah's Skincare Organics</title>
+  <link rel="stylesheet" href="../css/style.css"
 </head>
-<body>
-    <header>
-        <img src="../Assets/WhatsApp Image 2025-08-20 at 18.18.45_9de75b2e.jpg" alt="logo"width="200" height="150">
-        </nav>
-        <a href="../index.html">home</a>
-        <a href="./about.html">about</a>
-        <a href="./contact.html">contact</a>
-        <a href="./Services.html">service</a>
-        <a href="./enquiry.html">enquiry</a>
-       <nav>
-  <header>
-    <main>
-         <h1> contactus</h1>
-           <table>
-             <tr>
-              <td width="100">telephone number:</td>
-              <td width="100">(011)-754-000.</td>
-            </tr>
-            <tr>
-                <td width="100">physical address:</td>
-                <td width="100">36 Rabe street.<br/>polokwane,<br/>0700:</td>
-            </tr>
-            <tr>
-                <td width="100">email address:</td>
-                <td width="100">Lirahskincare.com.</td>
-            </tr>
-                </table>
-            </table>
-            <section>
-            <iframe src="">
 
-            </iframe>
-        </iframe>
-    </section>
+<body>
+  <!-- Header -->
+  <header class="container">
+    <img src="../Assets/WhatsApp Image 2025-08-20 at 18.18.45_9de75b2e.jpg" alt="logo" width="200" height="150" />
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./Services.html">Service</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Info -->
+  <main class="contact-page container">
+    <h1>Contact Us</h1>
+    <table class="contact-table">
+      <tr>
+        <td><strong>Telephone:</strong></td>
+        <td>(011) 754-000</td>
+      </tr>
+      <tr>
+        <td><strong>Address:</strong></td>
+        <td>
+          36 Rabe Street<br />
+          Polokwane, 0700
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Email:</strong></td>
+        <td>info@lirahskincare.com</td>
+      </tr>
+    </table>
+
+    <!-- Embedded Map (Optional) -->
     <section>
-        <h1>enguiries</h1>
-        <form action="#"="methods"="post">
-            <table>
-                <tr> 
-                    <td width="150">name</td>
-                    <td><input type="text" name="name" placeholder="enter your name"reguired></td>
-                </tr>
-                <tr> 
-                    <td width="150">email</td>
-                    <td><input type="text" name="email" placeholder="enter your email"reguired></td>
-                    </tr>
-                    <tr>
-                        <td width="150">message:</td>
-                        <td>
-                            <textarea cols="25" rows="5" reguired></textarea>
-                        </td>
-                        </tr>
-                        <td width="150"></td>
-                        <td><input type="submit" names="buttom" value="submit"></td>
-    
+      <iframe
+        src="https://www.google.com/maps?q=Polokwane,South+Africa&output=embed"
+        width="100%"
+        height="300"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section class="enquiry-form">
+      <h2>Enquiries</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" cols="30" rows="6" placeholder="Type your message..." required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Lirah's Skincare Organics. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Lirah's Skincare Product Enquiry</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lirah's Skincare Product Enquiry</title>
+  <link rel="stylesheet" href="../css/style.css"
 </head>
+
 <body>
-<header>
-    <img src="../Assets/WhatsApp Image 2025-08-20 at 18.18.45_9de75b2e.jpg"alt="200"font-weight="150"height="200">
-</nav>
-<a href="../index.html">home</a>
-<a href="./about.html">about</a>
-<a href="./contact.html">contact</a>
-<a href="./Services.html">service</a>
-<a href="./enquiry.html">enquiry</a>
-<nav>
-</header>
+  <!-- Header -->
+  <header class="container">
+    <img src="../Assets/WhatsApp Image 2025-08-20 at 18.18.45_9de75b2e.jpg" alt="Lirah's Logo" width="200" height="150" />
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./Services.html">Service</a></li>
+        <li><a href="./enquiry.html">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1>Enquiry Form - Skincare Products</h1>
+  <!-- Enquiry Form -->
+  <main class="enquiry-page container">
+    <h1>Product Enquiry Form</h1>
 
-    <form action="submit_enquiry.php" method="post">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form action="submit_enquiry.php" method="post" class="enquiry-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="phone">Phone Number (optional):</label>
-        <input type="tel" id="phone" name="phone">
+      <label for="phone">Phone Number (optional):</label>
+      <input type="tel" id="phone" name="phone" />
 
-        <label for="product">Interested Product:</label>
-        <select id="product" name="product">
-            <option value="">-- Select a Product --</option>
-            <option value="cleanser">Facial Cleanser</option>
-            <option value="moisturizer">Moisturizer</option>
-            <option value="serum">Vitamin C Serum</option>
-            <option value="sunscreen">SPF Sunscreen</option>
-            <option value="mask">Clay Mask</option>
-        </select>
+      <label for="product">Interested Product:</label>
+      <select id="product" name="product" required>
+        <option value="">-- Select a Product --</option>
+        <option value="cleanser">Facial Cleanser</option>
+        <option value="moisturizer">Moisturizer</option>
+        <option value="serum">Vitamin C Serum</option>
+        <option value="sunscreen">SPF Sunscreen</option>
+        <option value="mask">Clay Mask</option>
+      </select>
 
-        <label for="skinType">Your Skin Type:</label>
-        <select id="skinType" name="skinType">
-            <option value="">-- Select Skin Type --</option>
-            <option value="dry">Dry</option>
-            <option value="oily">Oily</option>
-            <option value="combination">Combination</option>
-            <option value="sensitive">Sensitive</option>
-            <option value="normal">Normal</option>
-        </select>
+      <label for="skinType">Your Skin Type:</label>
+      <select id="skinType" name="skinType" required>
+        <option value="">-- Select Skin Type --</option>
+        <option value="dry">Dry</option>
+        <option value="oily">Oily</option>
+        <option value="combination">Combination</option>
+        <option value="sensitive">Sensitive</option>
+        <option value="normal">Normal</option>
+      </select>
 
-        <label for="message">Your Enquiry:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Type your questions or concerns here..." required></textarea>
+      <label for="message">Your Enquiry:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your questions or concerns here..." required></textarea>
 
-        <button type="submit">Submit Enquiry</button>
+      <button type="submit">Submit Enquiry</button>
     </form>
+  </main>
 
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Lirah's Skincare Organics. All rights reserved.
+  </footer>
 </body>
 </html>
